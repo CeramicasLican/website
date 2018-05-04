@@ -1,0 +1,22 @@
+uuid: 506a82b8-0fc5-48e0-bc06-afa2ee5a07e9
+langcode: es
+status: true
+dependencies:
+  theme:
+    - gmx
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: gmx_local_tasks
+theme: gmx
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

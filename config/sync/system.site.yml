@@ -1,0 +1,14 @@
+uuid: 8a776a7d-6251-40bf-88b3-bec5a05b5efa
+name: 'Cerámicas Lican | Cerámica Gres en Viña del Mar'
+mail: taller@ceramicaslican.cl
+slogan: 'Piezas únicas'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,22 @@
+uuid: 7b82395c-a6f5-40e8-a46a-08af21b8bffe
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gmx
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: gmx_messages
+theme: gmx
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  provider: system
+  label_display: '0'
+visibility: {  }

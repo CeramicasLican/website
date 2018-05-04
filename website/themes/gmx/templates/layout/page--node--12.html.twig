@@ -1,0 +1,74 @@
+<!-- PANEL DE CONTROL TEMPLATE -->
+
+<div id="page-wrapper">
+  <div id="page">
+
+
+  <!--Start: Branding and Menu -->
+<div id="stick">
+  <div class="menu">
+    <div class="container">
+      <div class="row">
+        {% if page.header %}
+          <div class="col-xs-6 col-md-4">
+            {{ page.header }}
+          </div>
+        {% endif %}
+        <!-- Navigation -->
+        {% if page.menu %}
+          <div class="col-xs-6 col-md-8">
+            {{ page.menu }} 
+          </div>
+        {% endif %}
+        <!--End Navigation -->
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!--- Start Messages -->
+      {% if page.messages %}
+        <div class="container">
+          <div class="row">
+              {{ page.messages }}
+          </div>
+        </div>
+      {% endif %}
+      <!---End Messages -->
+
+      {% if page.panel %}
+        <div class="container boxpanel">
+          <div class="row">
+            <div class="col-md-12">
+                {{ page.panel }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+        <div class="container box">
+          <div class="row">
+            <div class="col-md-6">
+              {{ page.panela }}
+            </div>
+            <div class="col-md-6">
+              {{ page.panelb }}
+            </div>
+          </div>
+        </div>
+
+
+<!--Start: Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{ page.footera }}
+        </div>
+      </div>
+    </div>
+  </div>
+<!--End: Footer -->
+
+  </div>
+</div>

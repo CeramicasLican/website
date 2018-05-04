@@ -1,0 +1,22 @@
+uuid: 40abb2ab-4169-46eb-bf7e-847c03a45fe3
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gmx
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: gmx_content
+theme: gmx
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  provider: system
+  label_display: '0'
+visibility: {  }

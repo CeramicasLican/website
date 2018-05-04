@@ -1,0 +1,12 @@
+excluded:
+  - views.view.biografia
+  - views.view.home
+  - block.block.views_block__biografia_block_3
+  - block.block.views_block__biografia_block_5
+  - block.block.views_block__home_block_1
+  - block.block.views_block__home_block_3
+  - block.block.views_block__home_block_4
+  - block.block.views_block__home_block_5
+  - block.block.views_block__home_block_6
+  - block.block.views_block__home_block_7
+required: true

@@ -1,0 +1,7 @@
+enabled_fonts:
+  - 'https://www.google.com/webfonts/family?family=Nixie One&subset=latin#regular'
+  - 'https://www.google.com/webfonts/family?family=Libre Baskerville&subset=latin-ext#regular'
+load_all_enabled_fonts: 1
+_core:
+  default_config_hash: r8uAx4mTBwCkgDFbdKCmhjgbb91BQ4HbWSYRKrlowMY
+langcode: es

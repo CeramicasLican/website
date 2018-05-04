@@ -1,0 +1,381 @@
+
+
+.main-header {
+  background: url(../images/bg.jpg);
+  background-size: auto auto;
+  color: #fff;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+} 
+
+.main-header:after {
+  position: absolute;
+  display: block;
+  color: #fff;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -50;
+  background: rgba(17, 17, 16, 0.4);
+}
+
+.main-header .region{
+  position: relative;
+  z-index: 2;
+}
+
+.main-galeria {
+  background: url(../images/noticias.jpg);
+  background-size: auto auto;
+  color: #fff;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+} 
+
+.main-galeria:after {
+  position: absolute;
+  display: block;
+  color: #fff;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -50;
+  background: rgba(17, 17, 16, 0.4);
+}
+
+.main-galeria .region{
+  position: relative;
+  z-index: 2;
+}
+
+.banner {
+  text-align: center;
+  padding: 150px 0 150px 0;
+}
+
+h2.banner {
+  font-size: 1.5em;
+  font-weight: 100;
+  color: #fff;
+}
+
+.banner p {
+  font-size: 25px;
+  font-weight: 100;
+  color: #fff;
+}
+
+
+/* START: estilos */
+
+.taller {
+  background: url(../images/ceramica1.jpg);
+  background-size: auto auto;
+  color: #fff;
+  background-size: cover;
+  position: relative;
+  text-align: left;
+} 
+
+.taller:after {
+  position: absolute;
+  display: block;
+  color: #fff;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 16, 0.6);
+}
+
+.taller .region{
+  position: relative;
+  z-index: 2;
+}
+
+.tienda {
+  background: url(../images/ceramicas.jpg);
+  background-size: auto auto;
+  color: #fff;
+  background-size: cover;
+  position: relative;
+  text-align: left;
+} 
+
+.tienda:after {
+  position: absolute;
+  display: block;
+  color: #fff;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 16, 0.6);
+}
+
+.tienda .region{
+  position: relative;
+  z-index: 2;
+}
+
+.noticias {
+  background: url(../images/ceramica1.jpg);
+  background-size: auto auto;
+  color: #fff;
+  background-size: cover;
+  position: relative;
+  text-align: left;
+} 
+
+.noticias:after {
+  position: absolute;
+  display: block;
+  color: #fff;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 16, 0.6);
+}
+
+.noticias .region{
+  position: relative;
+  z-index: 2;
+}
+
+img {
+  max-width: 100%; 
+  height: 100%;
+}
+
+/* END: Tienda */
+
+
+
+
+.menu {
+  background: #fff;
+  padding: 1px 0 1px 0;
+}
+
+.profesionalismo-y-eficiencia {
+  background: #fff;
+  color: #171010;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about {
+  text-align: center;
+}
+.about h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333131;
+}
+
+.about p {
+  font-size: 18px;
+  color: #333131;
+}
+
+.profesionalismo-y-eficiencia h2 {
+  margin-bottom: 20px;
+  color: #171010;
+}
+
+.profesionalismo-y-eficiencia p {
+  line-height: 1.6em;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.nuestraempresa {
+  background: #f2f1f1;
+  color: #888787;
+  text-align: center;
+}
+.nuestraempresa h2 {
+margin: 50px 0 50px 0;
+}
+
+.nuestraempresa div.box  {
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1), 0px -1px 0px rgba(0, 0, 0, 0.1);
+  padding: 25px 25px;
+  margin-bottom: 30px;
+  }
+
+.nuestrosprofesionales {
+  background: #f2f1f1;
+  color: #888787;
+  text-align: center;
+}
+
+.areasdeactuacion {
+  background: #f2f1f1;
+  color: #888787;
+  text-align: center;
+}
+
+.clientes {
+  background: #f2f1f1;
+  color: #888787;
+  text-align: center;
+}
+
+
+.contacto {
+  background: #fff;
+  color: #888787;
+}
+
+.enlacesdeinteres  {
+  background: #333131;
+  color: #888787;
+  padding: 90px 20px 10px 20px;
+  text-align: center;
+}
+
+.enlacesdeinteres h2 {
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
+  font-size: 45px;
+  padding: 10px 20px 40px 20px;
+}
+
+.enlacesdeinteres a  {
+  color: #888787;
+  font-size: 16px;
+  text-decoration: none;
+}
+.enlacesdeinteres ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.enlacesdeinteres  li {
+  border-top-color: #888787;
+  border-top: solid 1px #aaa;
+  padding: 5px;
+}
+
+.enlacesdeinteres  li:first-child {
+  border-top-color: #888787;
+  border-top: solid 1px #333131;
+}
+
+
+.rs  {
+  background: #333131;
+  color: #888787;
+  padding: 10px 20px 90px 20px;
+  text-align: center;
+}
+
+/*
+.rs { width: 100%; overflow: hidden; }
+.rs ul { list-style: none; position: relative; float: left; display: block; left: 47%; }
+.rs ul li { position: relative; float: left; display: block; right: 50%; }
+*/
+
+.redsocial {
+  padding: 40px 0;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1), 0px -1px 0px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.sociales {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.sociales ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.sociales li {
+  padding: 0 5px 0 5px;
+}
+
+
+
+.footer  {
+  background: #333131;
+  color: #888787;
+  font-size: 18px;
+  padding: 60px 0 30px 0;
+  text-align: center;
+}
+
+.footer p {
+  background: #333131;
+  color: #888787;
+  font-family: 'Alegreya Sans';
+  font-size: 18px;
+  padding: 60px 0 30px 0;
+  text-align: center;
+}
+
+/* For width 400px and larger: */
+.box {
+  padding: 90px 20px;
+}
+
+.boxpanel {
+  padding: 10px 20px;
+}
+
+.contenidogaleria {
+  background-color: #333;
+  padding: 0 40px;
+}
+
+.round img {
+  border-radius: 50%;
+}
+
+
+@media only screen and (min-width: 450px) {
+  .box {
+    padding: 90px 90px;
+  }
+  .box h2 {
+    font-size: 45px;
+  }
+  .boxa {
+    padding: 0px 90px 90px 90px;
+  }
+  .boxa h2 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .main-header {
+    background: url(../images/bg.jpg);
+    color: #fff;
+    padding: 0 0 60px 0;
+    background-size: cover;
+    position: relative;
+  }
+
+}
+
+@media only screen and (min-width: 450px) {
+  .estilokvrol {
+    background: url(../images/kvrol.jpg);
+    color: #fff;
+    padding: 30px 0 60px 0;
+    background-size: cover;
+    position: relative;
+  }
+
+}

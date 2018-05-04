@@ -1,0 +1,22 @@
+uuid: a0e8bcf2-307b-4f2d-82af-9d0489a8cf60
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - gmx
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: gmx_help
+theme: gmx
+region: content
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  provider: help
+  label_display: '0'
+visibility: {  }

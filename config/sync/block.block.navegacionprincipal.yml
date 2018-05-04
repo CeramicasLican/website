@@ -1,0 +1,24 @@
+uuid: e9349a98-c6bb-4b9e-aaa6-295b343a07e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - gmx
+id: navegacionprincipal
+theme: gmx
+region: menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navegación principal'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

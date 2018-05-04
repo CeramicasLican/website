@@ -1,0 +1,13 @@
+langcode: es
+status: true
+dependencies: {  }
+name: cuadro
+label: Cuadro
+effects:
+  11f72b84-4aee-4e9c-bf21-00f3c08dc856:
+    uuid: 11f72b84-4aee-4e9c-bf21-00f3c08dc856
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 400

@@ -1,0 +1,20 @@
+uuid: cfb87722-15d7-40d1-b17b-0fa98e34273d
+langcode: es
+status: true
+dependencies:
+  theme:
+    - gmx
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: gmx_local_actions
+theme: gmx
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones primarias de administración'
+  provider: core
+  label_display: '0'
+visibility: {  }

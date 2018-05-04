@@ -1,0 +1,21 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: galeria
+label: Galería
+type: 'canonical_entities:node'
+pattern: 'galeria/[node:title]'
+selection_criteria:
+  9c5b9298-5c51-47c8-88b1-70e029af27ce:
+    id: node_type
+    bundles:
+      galeria: galeria
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9c5b9298-5c51-47c8-88b1-70e029af27ce
+selection_logic: and
+weight: -5
+relationships: {  }

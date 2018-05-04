@@ -1,0 +1,19 @@
+uuid: 2a1d0321-f619-4cf2-92b8-885910e1b528
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.bricky
+  module:
+    - user
+_core:
+  default_config_hash: GBAR2lsA5Prob44vO5Xwe1qQa9K27XxgRmHRDpEh7-I
+id: node.bricky.teaser
+targetEntityType: node
+bundle: bricky
+mode: teaser
+content: {  }
+hidden:
+  langcode: true
+  links: true

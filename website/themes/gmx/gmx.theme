@@ -1,0 +1,132 @@
+<?php
+
+/**
+ * @file
+ * Contains theme override functions and preprocess functions
+ */
+
+use Drupal\Core\Template\RenderWrapper;
+use Drupal\Core\Template\Attribute;
+use Drupal\search\Form\SearchBlockForm;
+use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\system\Form\ThemeSettingsForm;
+use Drupal\file\Entity\File;
+use Drupal\Core\Url;
+use Drupal\file\Plugin\Core\Entity\FileInterface;
+
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ * Page template for content type page--contettype.html.twig
+ * For "page" content type we refine it further by adding page--alias--"the-alias"
+ * example: page content type wit alias "about/us"  => "page--alias--about-us" template file
+ * From: https://www.lehelmatyus.com/1064/drupal-8-page-template-suggestion-by-path-alias 
+ */
+function gmx_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+
+  // Response codes for Access Denied and Page Not Found. 
+  $system_codes = [403, 404];
+  if (Drupal::request()->attributes->get('exception') && 
+       $status_code = Drupal::request()->attributes->get('exception')->getStatusCode()) {
+    // Add Basic Page suggestion if one of above response codes.
+    if (in_array($status_code, $system_codes)) {
+      $suggestions[] = 'page';
+    }
+  }
+
+   if ($node = Drupal::routeMatch()->getParameter('node')) {
+     $content_type = $node->bundle();
+     $suggestions[] = 'page__'.$content_type;
+
+       // for "page" content type only
+       // if ($content_type == 'page'){
+
+         if (in_array($content_type, array('webform','page'))) {
+
+         $current_path = Drupal::service('path.current')->getPath();
+         $alias = Drupal::service('path.alias_manager')->getAliasByPath($current_path);
+
+         if ($alias != '')  {
+
+           // break up the alias "/about/us"  => "", "about", "" ,"us"
+           $parts = explode('/', $alias);
+
+           // we only start suggestion with one "-" because first "/" will become extra "-"
+           $suggestion = 'page__alias';
+
+           foreach ($parts as $part) {
+               // subsequent suggestions get appended
+               $suggestion .= "_" . "$part";
+           }
+
+           // turn "-" in "_"
+           $suggestion = str_replace("-", "_", $suggestion);
+           $suggestions[] = $suggestion;
+
+         }
+       }
+
+   }
+
+ }
+
+
+
+/**
+ * Implements hook_preprocess_page() for block templates.
+ */
+
+function gmx_preprocess_page(&$variables) {
+
+  // Add Responsive class for Top Widget.
+  if (!empty($variables['page']['topwidget_first']) && !empty($variables['page']['topwidget_second']) && !empty($variables['page']['topwidget_third'])) {
+    $variables['topwidget_class'] = 'col-md-4';
+    $variables['topwidget_third_class'] = 'col-md-4';
+  }
+  elseif((!empty($variables['page']['topwidget_first']) && !empty($variables['page']['topwidget_second'])) or (!empty($variables['page']['topwidget_first']) && !empty($variables['page']['topwidget_third'])) or (!empty($variables['page']['topwidget_third']) && !empty($variables['page']['topwidget_second']))) {
+    $variables['topwidget_class'] = 'col-md-6';
+    $variables['topwidget_third_class'] = 'col-md-6';
+  }
+  else {
+    $variables['topwidget_class'] = 'col-md-12';
+  }
+
+  // Add Responsive class for Bottom Widget.
+  if (!empty($variables['page']['bottom_first']) && !empty($variables['page']['bottom_second']) && !empty($variables['page']['bottom_third']) && !empty($variables['page']['bottom_forth'])) {
+    $variables['bottom_class'] = 'col-md-3';
+  }
+  else if (!empty($variables['page']['bottom_first']) && !empty($variables['page']['bottom_second']) && !empty($variables['page']['bottom_third'])) {
+    $variables['bottom_class'] = 'col-md-4';
+  }
+  else if((!empty($variables['page']['bottom_first']) && !empty($variables['page']['bottom_second'])) or (!empty($variables['page']['bottom_first']) && !empty($variables['page']['bottom_third'])) or (!empty($variables['page']['bottom_third']) && !empty($variables['page']['bottom_second']))) {
+    $variables['bottom_class'] = 'col-md-6';
+  }
+  else {
+    $variables['bottom_class'] = 'col-md-12';
+  }
+
+
+
+  // Add information about the number of sidebars.
+  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    $variables['contentlayout'] = 'col-md-6';
+    $variables['sidebarfirst'] = 'col-md-3';
+    $variables['sidebarsecond'] = 'col-md-3';
+  }
+  elseif (!empty($variables['page']['sidebar_first'])) {
+    $variables['contentlayout'] = 'col-md-9 ';
+    $variables['sidebarfirst'] = 'col-md-3';
+  }
+  elseif (!empty($variables['page']['sidebar_second'])) {
+    $variables['contentlayout'] = 'col-md-9';
+    $variables['sidebarsecond'] = 'col-md-3';
+  }
+  else {
+    $variables['contentlayout'] = 'col-md-12';
+  }
+
+
+
+}

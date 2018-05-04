@@ -1,0 +1,10 @@
+uuid: 32e2fa0a-179c-42ed-b1f1-b083c6e7715c
+langcode: es
+status: true
+dependencies: {  }
+id: titulos
+label: Títulos
+font_url: 'https://www.google.com/webfonts/family?family=Nixie One&subset=latin#regular'
+fallback: ''
+selectors: '.fontyourface h1, .fontyourface h2, .fontyourface h3, .fontyourface h4, .fontyourface h5, .fontyourface h6'
+theme: gmx

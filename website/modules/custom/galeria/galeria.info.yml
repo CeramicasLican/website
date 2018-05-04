@@ -1,0 +1,21 @@
+name: Galería
+description: 'Galería de fotografías con un tipo de contenido y vistas.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - ctools
+  - field
+  - file
+  - image
+  - juicebox
+  - language
+  - menu_ui
+  - node
+  - path
+  - pathauto
+  - system
+  - text
+  - user
+  - views
+version: 8.x-1.0

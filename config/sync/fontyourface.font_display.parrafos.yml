@@ -1,0 +1,10 @@
+uuid: 736e9641-c4c0-4091-8537-90d6299b23f2
+langcode: es
+status: true
+dependencies: {  }
+id: parrafos
+label: Párrafos
+font_url: 'https://www.google.com/webfonts/family?family=Libre Baskerville&subset=latin-ext#regular'
+fallback: ''
+selectors: '.fontyourface p, .fontyourface div'
+theme: gmx

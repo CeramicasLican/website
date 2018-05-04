@@ -1,0 +1,18 @@
+uuid: 8c6dd800-fff8-42f3-a122-a920b58b9dd8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bricky
+  module:
+    - user
+_core:
+  default_config_hash: XmOMHhzDNEchoQ5JoCkewi2E7sOtyw90oDRdGQ_Desw
+id: node.bricky.default
+targetEntityType: node
+bundle: bricky
+mode: default
+content: {  }
+hidden:
+  langcode: true
+  links: true

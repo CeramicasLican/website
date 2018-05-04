@@ -1,0 +1,146 @@
+<div id="page-wrapper">
+  <div id="page">
+
+  <!--Start: Branding and Menu -->
+<div id="stick">
+  <div class="menu">
+    <div class="container">
+      <div class="row">
+        {% if page.header %}
+          <div class="col-xs-6 col-md-4">
+            {{ page.header }}
+          </div>
+        {% endif %}
+        <!-- Navigation -->
+        {% if page.menu %}
+          <div class="col-xs-6 col-md-8">
+            {{ page.menu }} 
+          </div>
+        {% endif %}
+        <!--End Navigation -->
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--Start: Slider -->
+    {% if page.slider %}
+      <div class="slider">
+              {{ page.slider }}
+      </div>
+    {% endif %}
+  <!--End: Slider -->
+
+
+      <!--- Start Messages -->
+      {% if page.messages %}
+        <div class="container">
+          <div class="row">
+              {{ page.messages }}
+          </div>
+        </div>
+      {% endif %}
+      <!---End Messages -->
+
+      <!--- Start content -->
+      {% if page.content %}
+        <div class="container">
+          <div class="row contenido">
+              {{ page.content }}
+          </div>
+        </div>
+      {% endif %}
+      <!---End content -->
+
+      <!--- Start Biografía -->
+      {% if page.biografia %}
+        <div class="container-fluid biografia boxa">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                {{ page.biografia }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      <!---End Biografía -->
+
+      <!--- Start Taller -->
+      {% if page.taller %}
+        <div class="container-fluid taller box">
+          <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                {{ page.taller }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      <!---End Taller -->
+
+      <!--- Start Clases -->
+      {% if page.clases %}
+        <div class="container-fluid clases box round">
+          <div class="row">
+            <div class="col-md-12">
+                {{ page.clases }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      <!---End Clases -->
+
+      <!--- Start Tienda -->
+      {% if page.tienda %}
+        <div class="container-fluid tienda box">
+          <div class="row">
+            <div class="col-md-12">
+                {{ page.tienda }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      <!---End Tienda -->
+
+      <!--- Start Galería -->
+      {% if page.galeria %}
+        <div class="container-fluid galeria box">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                {{ page.galeria }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      <!---End Galería -->
+
+      <!--- Start Enlaces de Interés -->
+      {% if page.enlacesdeinteres %}
+        <div class="container-fluid enlacesdeinteres">
+          <div class="row">
+            <div class="col-md-8 col-xs-12 col-md-offset-2">
+                {{ page.enlacesdeinteres }}
+            </div>
+              <div class="col-md-10 col-xs-12 col-md-offset-1">
+                <div class="margenenlaces">
+                 <div class="col-md-6">{{ page.enlacesdeinteresa }}</div>
+                 <div class="col-md-6">{{ page.enlacesdeinteresb }}</div>
+                </div>
+              </div>
+          </div>
+        </div>
+      {% endif %}
+      <!---End Enlaces de interés -->
+
+<!--Start: Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{ page.footera }}
+        </div>
+      </div>
+    </div>
+  </div>
+<!--End: Footer -->
+
+  </div>
+</div>
