@@ -70,33 +70,42 @@
       <!---End Messages -->
 
 
+  <!-- start: Container -->
+  <div class="container">
+
+      <!--- Start Left SideBar -->
+      {% if page.sidebar_first %}
+        <div class="sidebar" >
+          <div class = {{sidebarfirst}} >
+            {{ page.sidebar_first }}
+          </div>
+        </div>
+      {% endif %}
+      <!---End Right SideBar -->
+
       <!--- Start content -->
       {% if page.content %}
-        <div class="container">
-          <div class="row contenido">
-              {{ page.content }}
+        <div class="content_layout">
+          <div class={{contentlayout}}>
+            {{ page.content }}
           </div>
         </div>
       {% endif %}
       <!---End content -->
 
-            <!--- Start Contacto -->
-      {% if page.enlacesdeinteres %}
-        <div class="container-fluid enlacesdeinteres">
-          <div class="row">
-            <div class="col-md-8 col-xs-12 col-md-offset-2">
-                {{ page.enlacesdeinteres }}
-            </div>
-              <div class="col-md-10 col-xs-12 col-md-offset-1">
-                <div class="margenenlaces">
-                 <div class="col-md-6">{{ page.enlacesdeinteresa }}</div>
-                 <div class="col-md-6">{{ page.enlacesdeinteresb }}</div>
-                </div>
-              </div>
+      <!--- Start Right SideBar -->
+      {% if page.sidebar_second %}
+        <div class="sidebar">
+          <div class={{sidebarsecond}}>
+            {{ page.sidebar_second }}
           </div>
         </div>
       {% endif %}
-      <!---End Contacto -->
+      <!---End Right SideBar -->
+      
+    </div>
+    <!--End Content -->
+
 
 <!--Start: Footer -->
   <div class="footer">

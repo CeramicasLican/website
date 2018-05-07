@@ -24,35 +24,15 @@
   </div>
 </div>
 
-<!-- Header and Navbar -->
-<header class="main-galeria">
-
-  <!-- Start: Banner -->
-    {% if page.welcome_banner_text %}
-      <div class="container">
-        <div class="banner">
-          <div class="row">
-            <div class="col-md-12">
-              {{ page.welcome_banner_text }}
-            </div>
-          </div>
-        </div>
-      </div>
-    {% endif %}
-  <!-- End: Banner -->
-
-
-    {% if page.messages %}
+      <!--- Start Messages -->
+      {% if page.messages %}
         <div class="container">
           <div class="row">
-            <div class="col-md-12">{{ page.messages }}</div>
+              {{ page.messages }}
           </div>
         </div>
-    {% endif %}
-
-
-</header>
-<!--End Header & Navbar -->
+      {% endif %}
+      <!---End Messages -->
 
 
       <!--- Start content -->

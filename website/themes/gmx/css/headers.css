@@ -1,7 +1,7 @@
 
 
 .main-header {
-  background: url(../images/bg.jpg);
+  background: url(../images/clases.jpg);
   background-size: auto auto;
   color: #fff;
   background-size: cover;
@@ -236,7 +236,7 @@ margin: 50px 0 50px 0;
   color: #888787;
 }
 
-.enlacesdeinteres  {
+/* .enlacesdeinteres  {
   background: #333131;
   color: #888787;
   padding: 90px 20px 10px 20px;
@@ -268,7 +268,7 @@ margin: 50px 0 50px 0;
 .enlacesdeinteres  li:first-child {
   border-top-color: #888787;
   border-top: solid 1px #333131;
-}
+} */
 
 
 .rs  {
@@ -336,6 +336,15 @@ margin: 50px 0 50px 0;
 .contenidogaleria {
   background-color: #333;
   padding: 0 40px;
+}
+
+.contenidogaleria h1 {
+  color: #fff;
+}
+
+.contenidogaleria p {
+  color: #fff;
+  padding: 10px 50px 50px 30px;
 }
 
 .round img {
